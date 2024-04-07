@@ -1,6 +1,6 @@
 {
-  "name": "basil_assignment",
-  "version": "0.1.0",
+  "name": "basil_filter_board",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.18",
