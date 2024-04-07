@@ -1,11 +1,9 @@
 import React from 'react';
-
-// !3rd party
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 interface StatusProps {
   status: string;
-  onClick: () => void; // Specify the type of onClick
+  onClick: () => void;
 }
 
 function classNames(...classes: (string | undefined | null | false)[]) {

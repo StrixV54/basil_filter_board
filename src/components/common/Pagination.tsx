@@ -1,4 +1,3 @@
-// !3rd party
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 interface PaginationProps {

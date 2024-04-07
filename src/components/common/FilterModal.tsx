@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import MachineTable from "./MachineTable";
 import { machineStatus } from "../../constants/machineStatus";
 import { calculateNumberOfDays } from "../../utils";
-import { resetState, setDate, setStatusFilter } from "../../redux/slices/filterSlice";
+import { resetState, setDate, setStatusFilter } from "../../redux/filterSlice";
 import { Dialog, Transition } from "@headlessui/react";
 import {  XMarkIcon } from "@heroicons/react/24/outline";
 import { DateRangePicker } from "react-date-range";

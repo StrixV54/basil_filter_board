@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import documentImage from "../assets/document.svg";
-import gridImage from "../assets/grid.svg";
+import documentImage from "../../assets/document.svg";
+import gridImage from "../../assets/grid.svg";
 import Stats from "../common/Stats";
 import Table from "../common/Table";
 import Chip from "../common/Chip";
 import FilterModal from "../common/FilterModal";
 import {
   setMachineFilterData,
-} from "../../redux/slices/filterSlice";
+} from "../../redux/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function Orders() {

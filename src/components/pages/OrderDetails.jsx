@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 import { tableData } from "../../constants/userdata";
 import Status from "../common/Status";
 import CustomerTable from "../common/CustomerTable";
-import documentImage from "../assets/document.svg";
-import gridImage from "../assets/grid.svg";
-import skipIcon from "../assets/skip.svg";
+import documentImage from "../../assets/document.svg";
+import gridImage from "../../assets/grid.svg";
+import skipIcon from "../../assets/skip.svg";
 
 function OrderDetails() {
   const { order_id } = useParams();
@@ -22,7 +22,7 @@ function OrderDetails() {
           type="button"
           className="inline-flex justify-center rounded-md bg-[#377Ddf] px-3 py-2 text-sm font-[400] text-white shadow-sm hover:bg-blue-400 sm:col-start-2 mr-4"
         >
-          <img src={skipIcon} className="w-4 w-4 mr-2" alt="Skip Icon" />
+          <img src={skipIcon} className="size-4 mr-2" alt="Skip Icon" />
           Refund complete order
         </button>
         <div className="flex flex-row mr-6">

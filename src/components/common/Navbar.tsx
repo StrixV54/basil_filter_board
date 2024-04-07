@@ -3,7 +3,7 @@ import Breadcrumb from './Breadcrumb';
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
-import ProfileImage from "../../../assets/image.png"
+import ProfileImage from "../../assets/image.png"
 
 const user = {
   name: 'Shrikant',

@@ -5,7 +5,7 @@ import { machineNamesWithAddresses } from "../../constants/machineRecords";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 const MachineTable = () => {
-  const [rowData, setRowData] = useState([...machineNamesWithAddresses]);
+  const [rowData] = useState([...machineNamesWithAddresses]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [sortedField, setSortedField] = useState("");

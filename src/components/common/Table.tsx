@@ -5,8 +5,7 @@ import Status from "./Status";
 import { tableData } from "../../constants/userdata";
 
 const Table = () => {
-  // Row Data: The data to be displayed.
-  const [rowData, setRowData] = useState([...tableData]);
+  const [rowData] = useState([...tableData]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [sortedField, setSortedField] = useState("");
@@ -24,7 +23,6 @@ const Table = () => {
       } else if (typeof a[field] === "number" && typeof b[field] === "number") {
         comparison = a[field] - b[field];
       } else {
-        // Fallback to string comparison if types are not consistent
         comparison = String(a[field]).localeCompare(String(b[field]));
       }
       return newSortOrder === "asc" ? comparison : -comparison;
@@ -40,7 +38,6 @@ const Table = () => {
     const currentItems = rowData.slice(indexOfFirstItem, indexOfLastItem);
 
     setFilteredData(currentItems);
-    // Compute and set the total pages:
     const computedTotalPages = Math.ceil(rowData.length / rowPerPage);
     setTotalPages(computedTotalPages);
   }, [rowData, rowPerPage, currentPage]);
